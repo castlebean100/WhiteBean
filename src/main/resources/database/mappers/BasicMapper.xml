@@ -10,11 +10,18 @@
 	</insert>
 	
 	<update id="setUpdate" parameterType="BasicVO">
-		update basic set title=#{title}, contents=#{contents} where num=#{num}
+		update basic set title=#{title}, contents=#{contents}
+		where num=#{num}
 	</update>
 	
 	<delete id="setDelete" parameterType="BasicVO">
-		delete from basic where #{num}=num
+		delete from basic
+		where #{num}=num
 	</delete>
+	
+	<select id="getOne" parameterType="BasicVO" resultType="BasicVO">
+		select * from basic
+		where #{num}=num
+	</select>
 
 </mapper>

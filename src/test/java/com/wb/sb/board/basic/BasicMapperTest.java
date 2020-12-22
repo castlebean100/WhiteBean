@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.wb.sb.board.BoardVO;
+
 @SpringBootTest
 class BasicMapperTest {
 
@@ -38,7 +40,7 @@ class BasicMapperTest {
 	}
 	
 	
-	@Test
+	//@Test
 	void setDelteTest() throws Exception {
 		BasicVO basicVO = new BasicVO();
 		basicVO.setNum(11);
@@ -47,4 +49,17 @@ class BasicMapperTest {
 		assertNotEquals(0, result);
 		
 	}
+	
+		@Test
+		void getOneTest() throws Exception {
+		BasicVO basicVO = new BasicVO();
+		basicVO.setNum(5);
+
+		BoardVO boardVO = BasicMapper.getOne(basicVO);
+		
+		assertNotNull(basicVO);
+		
+	}
+		
+	
 }
