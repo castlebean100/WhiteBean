@@ -9,5 +9,9 @@
 		values (#{title}, #{contents}, sysdate(), 0)
 	</insert>
 	
+	<update id="setUpdate" parameterType="BasicVO">
+		update basic set title=#{title}, contents=#{contents} where num=#{num}
+	</update>
+	
 
 </mapper>
