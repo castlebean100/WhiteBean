@@ -15,6 +15,6 @@ class SqlSessionTest {
 	
 	@Test
 	void test() {
-		assertNotNull(sqlSession.getConnection());	}
-
+		assertNotNull(sqlSession.getConnection());
+	}
 }
