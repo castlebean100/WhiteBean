@@ -13,5 +13,8 @@
 		update basic set title=#{title}, contents=#{contents} where num=#{num}
 	</update>
 	
+	<delete id="setDelete" parameterType="BasicVO">
+		delete from basic where #{num}=num
+	</delete>
 
 </mapper>

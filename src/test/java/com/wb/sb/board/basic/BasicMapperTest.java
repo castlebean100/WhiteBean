@@ -25,7 +25,7 @@ class BasicMapperTest {
 	}
 	
 	
-	@Test
+	//@Test
 	void setUpdateTest() throws Exception {
 		BasicVO basicVO = new BasicVO();
 		basicVO.setTitle("tttteeesssstttt");
@@ -38,5 +38,13 @@ class BasicMapperTest {
 	}
 	
 	
-
+	@Test
+	void setDelteTest() throws Exception {
+		BasicVO basicVO = new BasicVO();
+		basicVO.setNum(11);
+		
+		int result =  BasicMapper.setDelete(basicVO);
+		assertNotEquals(0, result);
+		
+	}
 }
