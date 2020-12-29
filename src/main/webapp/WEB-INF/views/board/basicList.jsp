@@ -10,13 +10,10 @@
 <c:import url="../template/header.jsp"></c:import>
 </head>
 
+
 <body>
+
 <c:import url="../template/sidebar.jsp"></c:import>
-<div>
-</div>
-
-<c:import url="../template/footer.jsp"></c:import>
-
 
     <!-- Bootstrap core JavaScript-->
     <script src="<%=request.getContextPath()%>/resources/vendor/jquery/jquery.min.js"></script>
@@ -34,6 +31,8 @@
     <!-- Page level custom scripts -->
     <script src="<%=request.getContextPath()%>/resources/js/demo/chart-area-demo.js"></script>
     <script src="<%=request.getContextPath()%>/resources/js/demo/chart-pie-demo.js"></script>
+
+<c:import url="../template/footer.jsp"></c:import>
 
 </body>
 </html>
