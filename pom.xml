@@ -28,10 +28,20 @@
 			<version>1.16</version>
 		</dependency>
 		
-	
-	
-	
-	
+		<!--tomcat-jasper for JSP in Sprng boot -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+		
+		<!-- jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+			
+			
+			
 	
 	
 	
