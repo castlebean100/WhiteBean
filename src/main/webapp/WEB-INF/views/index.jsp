@@ -9,12 +9,10 @@
 	<c:import url="./template/header.jsp"></c:import>
 
 </head>
-
 <body id="page-top">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
-
 	<c:import url="./template/sidebar.jsp"></c:import>
 
 
@@ -369,12 +367,6 @@
 
     </div>
     <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
 
     <!-- Bootstrap core JavaScript-->
     <script src="<%=request.getContextPath()%>/resources/vendor/jquery/jquery.min.js"></script>

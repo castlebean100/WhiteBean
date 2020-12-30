@@ -10,10 +10,71 @@
 <c:import url="../template/header.jsp"></c:import>
 </head>
 
+<body id="page-top">
 
-<body>
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+	<c:import url="../template/sidebar.jsp"></c:import>
 
-<c:import url="../template/sidebar.jsp"></c:import>
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+  
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">MainPage</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                    </div>
+
+               
+
+						
+						
+						
+						
+
+
+
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
+                                            src="<%=request.getContextPath()%>/resources/img/undraw_posting_photo.svg" alt="">
+                                    </div>
+                                    <p>Add some quality, svg illustrations to your project courtesy of <a
+                                            target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a
+                                        constantly updated collection of beautiful svg images that you can use
+                                        completely free and without attribution!</p>
+                                    <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
+                                        unDraw &rarr;</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+			<c:import url="../template/footer.jsp"></c:import>
+
+            </div>
+            <!-- End of Main Content -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="<%=request.getContextPath()%>/resources/vendor/jquery/jquery.min.js"></script>
@@ -32,7 +93,6 @@
     <script src="<%=request.getContextPath()%>/resources/js/demo/chart-area-demo.js"></script>
     <script src="<%=request.getContextPath()%>/resources/js/demo/chart-pie-demo.js"></script>
 
-<c:import url="../template/footer.jsp"></c:import>
 
 </body>
 </html>
